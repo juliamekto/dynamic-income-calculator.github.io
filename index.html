@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <title>Калькулятор дохода</title>
+</head>
+<body>
+    <section class="profit-counter">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="dark class1">Рассчитайте прибыль</h2>
+                <div class="content">
+                    <div class="content_top">
+                        <div class="counter-block">
+                            <div class="population">
+                                <p>Укажите население Вашего города</p>
+                                <p>от <span class="population-number accent-color" id="populationNumOutput">50000</span> человек до 1млн </p>
+                                <input type="range" id="populationNumRng" class="populationNumRng" min="50000" max="1000000">
+                            </div>
+                            <div class="family">
+                                <p>Среднестатистическая семья</p>
+                                <P><span class="family-num">3</span> человека</P>
+                            </div>
+                        </div>
+                        <div class="counter-block">
+                            <div class="purchaseRate">
+                                <p>В нашем магазине сделают покупку не менее 1,2% семей</p>
+                                <div class="purchase-result">
+                                    <p><span id="familyNum">432534</span> семей</p>
+                                    <p><span id="ChequeNum">434</span> чеков (в год)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter-block">
+                            <div class="average-cheque">
+                                <p class="sub-title">Средний чек в наших магазинах</p>
+                                <p><span class="average-cheque-num">301</span> бел.руб</p>
+                            </div>
+                            <div class="month-profit">
+                                <p class="sub-title">Выручка в месяц</p>
+                                <p><span id="monthProfit">4680.9</span> бел.руб</p>
+                            </div>
+                            <div class="gross-profit">
+                                <p class="sub-title">Валовая прибыль</p>
+                                <p><span  class="accent-color" id="grossProfit">1875.9</span> бел.руб</p>
+                            </div>
+                        </div>
+                        <div class="counter-block">
+                            <div class="customer">
+                                <p>Следующие</p>
+                                <p class="customer-per-cent">2.1%</p>
+                                <p>Станут Вашими покупателями на следующий год</p>
+                            </div>
+                            <div class="cycle">
+                                <p>А цикл повторений покупки  в среднем составляет</p>
+                                <p><span class="cycle-num">1-2</span> года</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_middle">
+                        <span>*Данные приблизительные и зависят от города базирования франчайзи</span>
+                    </div>
+                    <div class="content_bottom">
+                        <button class="more-btn">Подробнее</button>
+                        <button class="contact-btn">Задать вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="./js/main.js"></script>
+</body>
+</html>

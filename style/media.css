@@ -1,0 +1,235 @@
+@media (max-width: 1200px) { 
+    .container {
+        max-width: 992px;
+    }
+    /* PROFIT COUNTER */
+    .profit-counter .content_top .counter-block {
+        width: 460px;
+        padding: 15px;
+        font-size: 13px;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(odd) {
+        margin-right: 20px;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(1), .profit-counter .content_top .counter-block:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+    .profit-counter .content {
+        margin-top: 70px;
+    }
+    .profit-counter .content_top .counter-block .month-profit p:nth-of-type(2):after {
+        top: 20%;
+    }
+    .profit-counter .content_top .counter-block .population .population-number {
+        font-size: 22px;
+    }
+    .profit-counter .content_top .counter-block .month-profit {
+        margin-right: 20px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque-num,
+    .profit-counter .content_top .counter-block #monthProfit, 
+    .profit-counter .content_top .counter-block #grossProfit,
+    .profit-counter .content_top .customer-per-cent, 
+    .profit-counter .content_top .cycle-num {
+        font-size: 19px;
+    }
+    .profit-counter .content_top .counter-block .family .family-num, #familyNum, #ChequeNum {
+        font-size: 22px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque {
+        margin-right: 0;
+    }
+    .profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2):after {
+        right: 20px;
+    }
+    .profit-counter .content_top .counter-block {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    h2:after {
+        width: 10px;
+    }
+    h2 {
+        padding-left: 30px;
+        font-size: 21px;
+    }
+    /* PROFIT COUNTER */
+    .profit-counter .content_top .counter-block {
+        width: 355px;
+        padding: 10px;
+        font-size: 11px;
+    }
+    .profit-counter .content {
+        margin-top: 50px;
+    }
+    .profit-counter .content_top .counter-block .population .population-number {
+        font-size: 20px;
+    }
+    .profit-counter .content_top .counter-block .family .family-num, #familyNum, #ChequeNum {
+        font-size: 20px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque-num, .profit-counter .content_top .counter-block #monthProfit, .profit-counter .content_top .counter-block #grossProfit, .profit-counter .content_top .customer-per-cent, .profit-counter .content_top .cycle-num {
+        font-size: 20px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque .sub-title, .profit-counter .content_top .counter-block .month-profit .sub-title, .profit-counter .content_top .counter-block .gross-profit .sub-title {
+        margin-bottom: 15px;
+    }
+    .profit-counter .content_bottom .more-btn {
+        width: 150px;
+        font-size: 12px;
+        height: 35px;
+        margin-right: 20px;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(1),
+     .profit-counter .content_top .counter-block:nth-of-type(2) {
+        margin-bottom: 10px;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(odd) {
+        margin-right: 10px;
+    }
+    .profit-counter .content_top .counter-block .month-profit {
+        margin-right: 5px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2) {
+        width: 70px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2):after {
+        right: -30px;
+    }
+    .profit-counter .content_top .counter-block .month-profit p:nth-of-type(2):after {
+        right: 0;
+        top: calc(50% - 15px/2);
+    }
+ }
+ @media (max-width: 768px) { 
+    .container {
+        max-width: 576px;
+    }
+      /* PROFIT COUNTER */
+    .profit-counter .content_top .counter-block {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(1),
+     .profit-counter .content_top .counter-block:nth-of-type(2) {
+        margin-bottom: 30px;
+    }
+    .profit-counter .content_top .counter-block:last-of-type {
+        margin-bottom: 0;
+    }
+    .profit-counter .content_top .counter-block:nth-of-type(odd) {
+        margin-right: 0;
+    }
+    .profit-counter .content_top .counter-block .population:after {
+        display: none;
+    }
+    .profit-counter .content_top .counter-block {
+        flex-direction: column;
+    }
+    .profit-counter .content_top .counter-block .population {
+        margin-right: 0;
+        width: 100%;
+    }
+    #populationNumRng {
+        width: 100%;
+    }
+    .profit-counter .content_top .counter-block .family {
+        display: flex;
+        align-items: baseline;
+    }
+    .profit-counter .content_top .counter-block .family p:nth-of-type(1) {
+        margin-right: 10px;
+    } 
+    .profit-counter .content_top .counter-block .average-cheque, 
+    .profit-counter .content_top .counter-block .month-profit, 
+    .profit-counter .content_top .counter-block .gross-profit {
+        font-size: 16px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque .sub-title, 
+    .profit-counter .content_top .counter-block .month-profit .sub-title, 
+    .profit-counter .content_top .counter-block .gross-profit .sub-title {
+        margin-bottom: 10px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2):after,
+     .profit-counter .content_top .counter-block .month-profit p:nth-of-type(2):after {
+        width: 40px;
+        height: 20px;
+        top: calc(50% - 20px/2);
+        right: 20%;
+    }
+    .profit-counter .content_top .counter-block .average-cheque, 
+    .profit-counter .content_top .counter-block .month-profit {
+        margin-bottom: 30px;
+        width: auto;
+    }
+    .profit-counter .content_top .counter-block .customer {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+    }
+    .profit-counter .content_top .customer-per-cent {
+        margin: 0 20px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque-num,
+    .profit-counter .content_top .counter-block #monthProfit,
+    .profit-counter .content_top .counter-block #grossProfit,
+    .profit-counter .content_top .customer-per-cent,
+    .profit-counter .content_top .cycle-num {
+        font-size: 25px;
+    }
+    .profit-counter .content_top .counter-block .family .family-num,
+     #familyNum, #ChequeNum {
+        font-size: 25px;
+    }
+    .profit-counter .content_top .counter-block .population .population-number {
+        font-size: 25px;
+    }
+    .profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2) {
+        width: auto;
+    }
+ }
+ @media (max-width: 576px) {
+    .container {
+        max-width: initial;
+    }
+    /* PROFIT COUNTER */
+    .profit-counter .container {
+        width: calc(100% - 200px);
+    }
+    .profit-counter .wrapper {
+        transform: translateX(-100px) translateY(0px) rotate(5deg);
+        transform-origin: calc(50% + 50vw) 0% 0;
+    }
+    .profit-counter h2 {
+        font-size: calc((100vw - 320px)/(576 - 320) * (22 - 14) + 14px);
+    }
+    .profit-counter .content_top .counter-block {
+        padding: calc((100vw - 320px)/(576 - 320) * (20 - 10) + 10px);
+        font-size: calc((100vw - 320px)/(576 - 320) * (16 - 13) + 13px);
+    }
+    .profit-counter .content_top .counter-block .average-cheque,
+     .profit-counter .content_top .counter-block .month-profit, 
+     .profit-counter .content_top .counter-block .gross-profit {
+        font-size: calc((100vw - 320px)/(576 - 320) * (16 - 13) + 13px);
+    }
+    .profit-counter .content_top .counter-block .average-cheque-num,
+    .profit-counter .content_top .counter-block #monthProfit,
+    .profit-counter .content_top .counter-block #grossProfit,
+    .profit-counter .content_top .customer-per-cent,
+    .profit-counter .content_top .cycle-num {
+        font-size: calc((100vw - 320px)/(576 - 320) * (25 - 20) + 20px);
+    }
+    .profit-counter .content_top .counter-block .family .family-num,
+     #familyNum, #ChequeNum {
+        font-size: calc((100vw - 320px)/(576 - 320) * (25 - 18) + 18px);
+    }
+    .profit-counter .content_top .counter-block .population .population-number {
+        font-size: calc((100vw - 320px)/(576 - 320) * (25 - 20) + 20px);
+    }
+}

@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@font-face {
+    font-family: "MullerExtraBold", sans-serif;
+    src: url(../fonts/MullerExtraBold.woff);
+}
+@font-face {
+    font-family: "MullerRegular", sans-serif;
+    src: url(../fonts/MullerRegular.woff);
+}
+body {
+    font-family: "MullerRegular", sans-serif;
+    overflow-x: hidden;
+}
+h2.class1 {
+    font-family: "MullerExtraBold", sans-serif;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 40px;
+}
+h2.class1:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 100%;
+    background-color: #758a9b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.class1.light {
+    color: #fff;
+}
+.class1.dark {
+    color: #444344;
+}
+.class1.accent-color {
+    color: #e71d73;
+}
+
+/* PROFIT COUNTER  */
+input[type=range].populationNumRng {
+    -webkit-appearance: none;
+    width: 95%;
+    margin: 7px 0;
+  }
+  input[type=range].populationNumRng:focus {
+    outline: none;
+  }
+  input[type=range].populationNumRng::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 1.1px 1.1px 0.2px #ffffff, 0px 0px 1.1px #ffffff;
+    background: #d888a9;
+    border-radius: 20px;
+    border: none;
+  }
+  input[type=range].populationNumRng::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #e6e6e6, 0px 0px 1px #f3f3f3;
+    border: 3px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #d6658f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.6px;
+  }
+  input[type=range].populationNumRng:focus::-webkit-slider-runnable-track {
+    background: #d6658f;
+  }
+  input[type=range].populationNumRng::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 1.1px 1.1px 0.2px #ffffff, 0px 0px 1.1px #ffffff;
+    background: #d888a9;
+    border-radius: 20px;
+    border: none;
+  }
+  input[type=range].populationNumRng::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #e6e6e6, 0px 0px 1px #f3f3f3;
+    border: 3px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #d6658f;
+    cursor: pointer;
+  }
+  input[type=range].populationNumRng::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range].populationNumRng::-ms-fill-lower {
+    background: #cb628d;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 1.1px 1.1px 0.2px #ffffff, 0px 0px 1.1px #ffffff;
+  }
+  input[type=range].populationNumRng::-ms-fill-upper {
+    background: #d888a9;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 1.1px 1.1px 0.2px #ffffff, 0px 0px 1.1px #ffffff;
+  }
+  input[type=range].populationNumRng::-ms-thumb {
+    box-shadow: 1px 1px 1px #e6e6e6, 0px 0px 1px #f3f3f3;
+    border: 3px solid #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #d6658f;
+    cursor: pointer;
+    height: 6px;
+  }
+  input[type=range].populationNumRng:focus::-ms-fill-lower {
+    background: #d888a9;
+  }
+  input[type=range].populationNumRng:focus::-ms-fill-upper {
+    background: #e5aec5;
+  }
+.profit-counter {
+    padding: 70px 0;
+    position: relative;
+    z-index: 1;
+}
+.profit-counter .wrapper {
+    background: #fff;
+    position: relative;
+}
+.profit-counter .container {
+    padding: 0 20px 100px 20px;
+}
+.profit-counter .content {
+    margin-top: 90px;
+}
+.profit-counter h2 {
+    max-width: 210px;
+}
+.profit-counter .content_top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profit-counter p {
+    margin: 0;
+    line-height: 1.5;
+}
+.profit-counter .content_top .counter-block {
+    width: 565px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.profit-counter .content_top .counter-block .population {
+    margin-right: 50px;
+    position: relative;
+}
+.profit-counter .content_top .counter-block .population:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    transform: rotate(20deg);
+    right: -10%;
+    top: 0;
+}
+.profit-counter .content_top .counter-block .population .population-number {
+    font-size: 25px;
+    font-weight: 400;
+}
+.profit-counter .content_top .counter-block .family .family-num,
+#familyNum, #ChequeNum{
+    font-size: 25px;
+}
+.profit-counter .content_top .counter-block:nth-of-type(odd) {
+    margin-right: 30px;
+} 
+.profit-counter .content_top .counter-block:nth-of-type(1),
+.profit-counter .content_top .counter-block:nth-of-type(2) {
+    margin-bottom: 30px;
+} 
+.profit-counter .content_top .counter-block .purchase-result {
+    display: flex;
+    align-items: center;
+}
+.profit-counter .content_top .counter-block .purchaseRate>p{
+    margin: 0 0 10px 0;
+}
+.profit-counter .content_top .counter-block .purchase-result p:nth-of-type(1) {
+    margin-right: 40px;
+    position: relative;
+}
+.profit-counter .content_top .counter-block .purchase-result p:nth-of-type(1):after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 15px;
+    background: url(../img/profit-counter/arrow.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 15px/2);
+    right: -30px;
+}
+.profit-counter .content_top .counter-block .average-cheque-num,
+.profit-counter .content_top .counter-block #monthProfit,
+.profit-counter .content_top .counter-block #grossProfit,
+.profit-counter .content_top .customer-per-cent,
+.profit-counter .content_top .cycle-num {
+    font-size: 25px;
+}
+.profit-counter .content_top .counter-block .average-cheque {
+    margin-right: 20px;
+    width: 150px;
+}
+.profit-counter .content_top .counter-block .month-profit {
+    margin-right: 50px;
+}
+.profit-counter .content_top .counter-block .average-cheque,
+.profit-counter .content_top .counter-block .month-profit,
+.profit-counter .content_top .counter-block .gross-profit {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profit-counter .content_top .counter-block .average-cheque .sub-title,
+.profit-counter .content_top .counter-block .month-profit .sub-title,
+.profit-counter .content_top .counter-block .gross-profit .sub-title{
+    margin-bottom: 25px;
+}
+.profit-counter .content_top .customer-per-cent {
+    margin-top: 10px;
+}
+.profit-counter .content_top .cycle p:nth-of-type(2) {
+    margin-top: 10px;
+}
+.profit-counter .content_middle {
+    margin-top: 35px;
+    font-family: Fira Sans,sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 12px;
+}
+.profit-counter .content_bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.profit-counter .content_bottom .more-btn {
+    width: 220px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: #e71d73;
+    box-shadow: 0 3px 7px 0 rgba(214,89,136,.35);
+    border-radius: 30px;
+    height: 46px;
+    border: none;
+    font-family: Fira Sans,sans-serif;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+.profit-counter .content_bottom .more-btn:hover {
+    background-color: #74a3b5;
+    transition: background-color .2s linear;
+}
+.profit-counter .content_bottom .more-btn:active {
+    background-color: #283593;
+    transition: background-color .2s linear;
+}
+.profit-counter .content_bottom .contact-btn {
+    font-family: Fira Sans,sans-serif;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2),
+.profit-counter .content_top .counter-block .month-profit p:nth-of-type(2) {
+    position: relative;
+}
+.profit-counter .content_top .counter-block .average-cheque p:nth-of-type(2):after,
+.profit-counter .content_top .counter-block .month-profit p:nth-of-type(2):after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 15px;
+    background: url(../img/profit-counter/arrow.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 15px/2);
+    right: 0;
+}
+.profit-counter .content_top .counter-block .month-profit p:nth-of-type(2):after {
+    right: -35px;
+}
